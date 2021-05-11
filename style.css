@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css?family=Pathway+Gothic+One");
+@import url("https://fonts.googleapis.com/css?family=ABeeZee");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ABeeZee;
+  box-sizing: border-box !important;
+  transition: all 250ms ease-in-out;
+}
+
+::-moz-selection {
+  background-color: #121212;
+  color: #f6f6f6;
+}
+
+::selection {
+  background-color: #121212;
+  color: #f6f6f6;
+}
+
+html {
+  font-size: 16px;
+  font-family: ABeeZee;
+}
+
+.row {
+  margin: 0;
+}
+
+a {
+  text-align: center;
+  display: block;
+  color: #232323;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #232323;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.wrapper header .logo {
+  display: inline-block;
+  font-size: 2em;
+  position: relative;
+  padding: 0 0 0 25px;
+  font-weight: 500;
+  height: 40px;
+  width: 75px;
+  margin: 5px 0 0 25px;
+  color: #232323;
+  clear: both;
+  background: url("http://svgshare.com/i/VW.svg") no-repeat center/contain;
+}
+.wrapper header .logo img {
+  display: block;
+  height: 100%;
+  background-color: red;
+}
+.wrapper header nav.navbar {
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
+  padding: 0 5px;
+}
+.wrapper header nav.navbar ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.wrapper header nav.navbar ul li {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.wrapper header nav.navbar ul li a {
+  padding: 15px 15px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+.wrapper header nav.navbar ul li a:hover {
+  color: #fff;
+  background: #232323;
+  transform: translateY(10px);
+  box-shadow: 0 5px 5px -5px rgba(35, 35, 35, 0.25);
+}
+.wrapper .jumbotron {
+  padding: 50px 20%;
+  margin: 0 auto;
+  border-bottom: 5px solid #232323;
+  box-model: border-box;
+  background-color: transparent;
+}
+.wrapper .jumbotron h1 {
+  margin: 0;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: #232323;
+  color: #fff;
+  display: inline-block;
+  box-shadow: 0 5px 5px -5px rgba(35, 35, 35, 0.5);
+  font-size: 3em;
+}
+.wrapper .jumbotron p {
+  color: #232323;
+}
+.wrapper .jumbotron a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #232323;
+  border-radius: 5px;
+}
+.wrapper .jumbotron a:hover {
+  background-color: #03C9A9;
+  box-shadow: 0 15px 15px -15px rgba(35, 35, 35, 0.5);
+  transform: translateY(-5px);
+}
+.wrapper section.services {
+  padding: 50px 10px;
+  background: rgba(204, 204, 204, 0.2);
+  border-bottom: 5px solid #232323;
+}
+.wrapper section.services article {
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+}
+.wrapper section.services article .fa {
+  display: inline-block;
+  font-size: 6em;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  line-height: 100px;
+  color: #fff;
+  background-color: #03C9A9;
+  margin: 10px 0 15px 0;
+}
+.wrapper section.services article h1 {
+  margin: 0 0 15px;
+  font-size: 1.5em;
+  text-align: center;
+}
+.wrapper section.services article p {
+  text-align: justify;
+  padding: 0 10px 10px;
+}
+.wrapper section.works {
+  border-bottom: 5px solid #232323;
+  padding: 50px;
+}
+.wrapper section.works article.img-box {
+  border-radius: 10px;
+  height: 150px;
+  border: 5px solid white;
+  padding: 25px;
+  overflow: hidden;
+}
+.wrapper section.works article.img-box:hover {
+  background-position: center;
+}
+.wrapper section.works article.img-box:hover h1, .wrapper section.works article.img-box:hover p, .wrapper section.works article.img-box:hover a {
+  transform: translateX(0px);
+  filter: blur(0px) grayscale(0%);
+}
+.wrapper section.works article.img-box h1 {
+  font-size: 1.5em;
+  color: white;
+  transform: translateY(-100px);
+  filter: blur(20px) grayscale(20%);
+}
+.wrapper section.works article.img-box p {
+  color: white;
+  transform: translateX(-150%);
+  filter: blur(20px) grayscale(20%);
+}
+.wrapper section.works article.img-box a {
+  transform: translateY(200px);
+  color: white;
+  display: inline-block;
+  margin: 5px 0 0 0;
+  filter: blur(20px) grayscale(20%);
+}
+.wrapper .top-posts {
+  padding: 50px;
+}
+.wrapper .top-posts .post {
+  padding: 5px 25px;
+  border-bottom: 2px solid #ccc;
+}
+.wrapper .top-posts .post .name {
+  float: left;
+  font-size: 1em;
+  font-weight: 600;
+}
+.wrapper .top-posts .post .time {
+  float: right;
+  font-size: 1em;
+  font-weight: 600;
+}
+.wrapper .top-posts .post .body {
+  clear: both;
+  text-align: left;
+  font-size: 1.2em;
+}
+.wrapper .top-posts .post .body a {
+  text-align: left;
+  font-weight: 500;
+}
+.wrapper .top-posts .post .comments {
+  float: right;
+  font-size: 0.9rem;
+}
+.wrapper .top-posts ul.page {
+  list-style: none;
+  background: #1b2c3d;
+}
+.wrapper .top-posts ul.page > li {
+  display: inline-block;
+}
+.wrapper .top-posts ul.page > li a {
+  display: inline-block;
+}
+.wrapper .top-posts ul.page:last-child {
+  background-color: red;
+}
+.wrapper footer {
+  border-bottom: 5px solid #232323;
+  background-color: rgba(221, 221, 221, 0.2);
+}
+.wrapper footer .row {
+  padding: 50px;
+}
+.wrapper footer .row > div h1 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #eee;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+.wrapper footer .row > div ul {
+  list-style: none;
+}
+.wrapper footer .row > div ul li {
+  margin: 0;
+  padding: 0;
+}
+.wrapper footer .row > div ul li a {
+  text-align: left;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.wrapper footer .row > div ul li a .fa {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #232323;
+  color: white;
+  border-radius: 15px;
+  margin: 0 10px 0;
+  text-align: center;
+}
+.wrapper footer .row > div ul li a div {
+  display: inline-block;
+  text-transform: capitalise;
+}
+.wrapper footer .row > div form label {
+  display: block;
+  padding: 10px 0 0 0;
+}
+.wrapper footer .row > div form input, .wrapper footer .row > div form textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #c6dddf;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.wrapper footer .row > div form input[type=submit], .wrapper footer .row > div form textarea[type=submit] {
+  background-color: #afd;
+  display: inline-block;
+  text-align: center;
+  margin: 5px auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px -5px rgba(35, 35, 35, 0.25);
+}
+.wrapper footer .row > div p {
+  text-align: justify;
+}
+.wrapper footer .copyleft {
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+.wrapper footer .copyleft p {
+  margin: 0;
+  padding: 10px 50px;
+  font-size: 1.25em;
+  text-align: center !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
