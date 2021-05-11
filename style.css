@@ -95,6 +95,7 @@ h1 {
   border-bottom: 5px solid #232323;
   box-model: border-box;
   background-color: transparent;
+  height: 33vh;
 }
 .wrapper .jumbotron h1 {
   margin: 0;
@@ -221,7 +222,7 @@ h1 {
 }
 .wrapper .top-posts ul.page {
   list-style: none;
-  background: #1b2c3d;
+/*   background: #1b2c3d; */
 }
 .wrapper .top-posts ul.page > li {
   display: inline-block;
@@ -230,7 +231,7 @@ h1 {
   display: inline-block;
 }
 .wrapper .top-posts ul.page:last-child {
-  background-color: red;
+/*   background-color: red; */
 }
 .wrapper footer {
   border-bottom: 5px solid #232323;
