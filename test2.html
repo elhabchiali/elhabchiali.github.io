@@ -1,0 +1,103 @@
+
+<html>
+<head>
+<style>
+
+</style>
+
+
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/fdd115ea67.js" crossorigin="anonymous"></script>
+
+<script>
+
+const show_popup = () => {
+    const popup = $(".contact-popup");
+    const popupItems = document.querySelectorAll(".popup__item");
+    const popupWrap = $(".popup__wrap");
+    const popupOverlay = $(".popup__overlay");
+    const popupClose = $(".popup__close");
+    const btnsPopup = $$(".btn_popup");
+  
+    btnsPopup.forEach((btn) => {
+        btn.addEventListener(["click"], () => {
+            showPopup(btn.getAttribute("data-popup"));
+        });
+    });
+  
+    const showPopup = (index) => {
+        popupItems.forEach((popup) => {
+            popup.classList.remove("show_data");
+        });
+        popup.style.display = "block !important";
+        $(`.popup__item[data-popup="${index}"]`).classList.add("show_data");
+        popupWrap.classList = `popup__wrap popup__wrap--${index}`;
+        setTimeout(() => {
+            popup.classList.add("show_data");
+        }, 10);
+    };
+    const closePopup = () => {
+        popup.classList.remove("show_data");
+        setTimeout(() => {
+            popup.style.display = "";
+            popupWrap.classList = `popup__wrap`;
+        }, 500);
+    };
+
+    popupOverlay.addEventListener("click", closePopup);
+    popupClose.addEventListener("click", closePopup);
+
+};
+// show_popup();
+
+</script>
+
+</head>
+<body>
+
+<div class="main">
+
+<div class="topbar bar">
+<a href="about.html">About</a>
+<a href="resume.html">Resume</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="blog.html">Blog</a>
+</div>
+
+<div class="center-section">
+    <div class="text">
+        <div class="title">Ali El habchi</div>
+        <div class="subtitle">Senior Computer Vision Engineer</div>
+    </div>
+    <div class="image">
+        <img src="pp.jpg" alt="Placeholder image"/>
+    </div>
+</div>
+<div class="bottombar bar">
+    <a href="https://www.linkedin.com/in/ali-el-habchi/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://twitter.com/Alielhabchi"><i class="fa-brands fa-x-twitter"></i></a>
+    <!-- <a href="mailto">Contact</a> -->
+    <a href="https://github.com/elhabchiali"><i class="fa-brands fa-github"></i></a> 
+    <a href="mailto:elhabchiali@gmail.com"><i class="fa-solid fa-address-book"></i></a>  
+</div>
+
+</div>
+
+<!-- <div class="contact-popup"> -->
+<div class="contact-popup" style="display: none;">
+    
+<!-- <h1>Conttact</h1> -->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" name="name"/>
+    <label for="email">Email:</label>
+    <input type="text" name="email"/>
+    <label for="message">Message:</label>
+    <textarea name="message"></textarea>
+    <input type="submit"/>
+</form>
+</div>
+
+
+</body>
+</html>
