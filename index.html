@@ -4,57 +4,94 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preload" as="image" href="bg.jpg">
-<title>Ali El Habchi &mdash; Senior Computer Vision Engineer</title>
-<meta name="description" content="Portfolio landing page for Ali El Habchi, a senior computer vision engineer specializing in advanced AI solutions.">
+<link rel="preload" as="image" href="pp.jpg">
+<title>Ali El Habchi — Computer Vision & AI Engineering</title>
+<meta name="description" content="Ali El Habchi builds production-ready computer vision systems, multimodal AI products, and perception pipelines for teams shipping ambitious technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/fdd115ea67.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
+  <header class="hero" id="top">
+    <div class="hero__backdrop" aria-hidden="true"></div>
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top">Ali El Habchi</a>
+      <div class="topbar__links">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+        <a href="ali-el-habchi-cv.pdf">Resume</a>
+      </div>
+    </nav>
 
-<div class="main">
+    <div class="hero__content">
+      <div class="hero__copy">
+        <p class="eyebrow">Computer Vision Engineer · AI Product Builder</p>
+        <h1>Ali El Habchi</h1>
+        <p class="hero__lede">I design and ship production-ready vision systems, multimodal workflows, and intelligent user experiences that turn research-grade AI into dependable products.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="mailto:elhabchiali@gmail.com">Start a conversation</a>
+          <a class="button button--secondary" href="ali-el-habchi-cv.pdf">Download resume</a>
+        </div>
+      </div>
 
-<div class="topbar bar">
-<a href="#">About</a>
-<a href="ali-el-habchi-cv.pdf">Resume</a>
-<a href="#">Portfolio</a>
-<a href="#">Blog</a>
-</div>
-
-<div class="center-section">
-    <div class="text">
-        <div class="title">Ali El habchi</div>
-        <div class="subtitle">Senior Computer Vision Engineer</div>
+      <div class="hero__visual" aria-label="Portrait of Ali El Habchi">
+        <img src="pp.jpg" alt="Portrait of Ali El Habchi">
+      </div>
     </div>
-    <div class="image">
-        <img src="pp.jpg" alt="Portrait of Ali El Habchi"/>
-    </div>
-</div>
-<div class="bottombar bar">
-    <a href="https://www.linkedin.com/in/ali-el-habchi/"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://twitter.com/Alielhabchi"><i class="fa-brands fa-x-twitter"></i></a>
-    <!-- <a href="mailto">Contact</a> -->
-    <a href="https://github.com/elhabchiali"><i class="fa-brands fa-github"></i></a> 
-    <a href="mailto:elhabchiali@gmail.com"><i class="fa-solid fa-address-book"></i></a>  
-</div>
+  </header>
 
-</div>
+  <main>
+    <section class="section section--work" id="work">
+      <div class="section__intro">
+        <p class="section__kicker">Selected work</p>
+        <h2>From perception pipelines to polished AI experiences.</h2>
+        <p>I focus on turning advanced modeling into systems that are resilient, understandable, and useful in the hands of real teams.</p>
+      </div>
+      <div class="work-list">
+        <article>
+          <h3>Computer vision systems</h3>
+          <p>Detection, segmentation, tracking, and scene understanding tuned for real-world data, latency, and deployment constraints.</p>
+        </article>
+        <article>
+          <h3>AI product engineering</h3>
+          <p>Interfaces and workflows that make sophisticated models feel clear, responsive, and trustworthy for end users.</p>
+        </article>
+        <article>
+          <h3>Production delivery</h3>
+          <p>Model evaluation, iteration loops, and engineering practices that help prototypes mature into dependable shipped systems.</p>
+        </article>
+      </div>
+    </section>
 
-<!-- <div class="contact-popup"> -->
-<div class="contact-popup" style="display: none;">
-    
-<!-- <h1>Conttact</h1> -->
-<form>
-    <label for="name">Name:</label>
-    <input type="text" name="name"/>
-    <label for="email">Email:</label>
-    <input type="text" name="email"/>
-    <label for="message">Message:</label>
-    <textarea name="message"></textarea>
-    <input type="submit"/>
-</form>
-</div>
+    <section class="section section--approach" id="approach">
+      <div class="section__intro">
+        <p class="section__kicker">Approach</p>
+        <h2>Engineering with clarity, performance, and product context.</h2>
+        <p>The goal is not just to make a model work. It is to make the whole experience useful, measurable, and ready for the environments where it has to perform.</p>
+      </div>
+      <div class="approach-points">
+        <p><span>01</span> Frame the product problem before choosing the modeling strategy.</p>
+        <p><span>02</span> Build for the data, hardware, and edge cases that matter in practice.</p>
+        <p><span>03</span> Shape the final experience so the intelligence feels legible and confident.</p>
+      </div>
+    </section>
 
-
+    <section class="section section--contact" id="contact">
+      <div class="section__intro">
+        <p class="section__kicker">Contact</p>
+        <h2>Open to ambitious AI and computer vision work.</h2>
+        <p>If you are building something meaningful in applied AI, I would love to hear what you are working on.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:elhabchiali@gmail.com">elhabchiali@gmail.com</a>
+        <a href="https://www.linkedin.com/in/ali-el-habchi/">LinkedIn</a>
+        <a href="https://github.com/elhabchiali">GitHub</a>
+        <a href="https://twitter.com/Alielhabchi">X / Twitter</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
