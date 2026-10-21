@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elhabchiali.github.io/sitemap.xml
